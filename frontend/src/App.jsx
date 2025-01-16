@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Admin from './pages/admin/Admin'
 import Wishlist from './pages/wish/Wishlist'
 import Basket from './pages/basket/Basket'
+import Detail from './pages/detail/Detail'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/basket", 
     element: <Basket />,
+      },
+      {
+        path: "/productdetail/:id", 
+    element: <Detail />,
       },
     ]
 

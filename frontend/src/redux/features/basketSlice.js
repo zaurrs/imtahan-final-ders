@@ -20,12 +20,17 @@ const basketSlice = createSlice({
 
         },
         plusBtn: (state, action)=>{
-            
+            const existProduct = state.basket.find((item)=>item._id === action.payload._id)
+            existProduct.count += 1
+        },
+        minusBtn: (state, action)=>{
+            const existProduct = state.basket.find((item)=>item._id === action.payload._id)
+            existProduct.count -= 1
         }
     }
 })
 
 
-export const {  addBasket,deleteBasket } = basketSlice.actions
+export const {  addBasket,deleteBasket,plusBtn,minusBtn } = basketSlice.actions
 
 export default basketSlice.reducer

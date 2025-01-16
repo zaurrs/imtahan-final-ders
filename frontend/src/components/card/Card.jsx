@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Card.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { addBasket } from "../../redux/features/basketSlice";
+import { useNavigate } from "react-router-dom";
 
 
 const Card = ({ product }) => {
@@ -13,13 +14,15 @@ const Card = ({ product }) => {
   const toggleHeart = () => {
     setHeart(!heart);
   };
-  
-const addToBasket = (e, product)=>{
-dispatch(addBasket(product))
-}
+
+  const addToBasket = (e, product) => {
+    e.stopPropagation()
+    dispatch(addBasket(product))
+  }
+  const navigate = useNavigate()
   return (
     <>
-      <div className="card" key={product._id}>
+      <div className="card" key={product._id} onClick={()=>navigate(`productdetail/${product._id}`)}>
         <div className="heart">
           {heart ? (
             <i
@@ -42,8 +45,8 @@ dispatch(addBasket(product))
         <div className="card-container">
           <h5>{product?.name}</h5>
           <p className="price">${product?.price}</p>
-          <button onClick={(e)=>{
-addToBasket(e, product)
+          <button onClick={(e) => {
+            addToBasket(e, product)
           }}>Add to cart</button>
         </div>
       </div>
