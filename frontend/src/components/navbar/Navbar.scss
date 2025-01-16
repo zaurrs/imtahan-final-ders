@@ -1,0 +1,27 @@
+.container{
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            display: flex;
+            .redlogo{
+                color: red;
+            }
+        }
+        .list{
+            display: flex;
+            gap: 20px;
+            a{
+                font-size: 20px;
+            }
+        }
+        .wrapper{
+            display: flex;
+            gap: 20px;
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+}

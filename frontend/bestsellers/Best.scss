@@ -1,0 +1,26 @@
+.container{
+    .title{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        .xet{
+            width: 70px;
+            height: 5px;
+            background-color: red;
+        }
+        .category-button{
+            display: flex;
+            button{
+                padding: 5px 20px;
+                border: 1px solid gray;
+            }
+        }
+    }
+    .cards{
+       display: flex;
+       flex-wrap: wrap;
+    }
+}

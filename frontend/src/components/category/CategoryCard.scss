@@ -1,0 +1,43 @@
+.container{
+
+    .row{
+    height: 300px;
+
+        .women{
+            background-image: url("https://preview.colorlib.com/theme/coloshop/images/banner_1.jpg.webp");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+padding: 15px 35px;   
+font-size: 30px;      
+font-weight: bold;      
+            }
+        }
+        .acce{
+            background-image: url("https://preview.colorlib.com/theme/coloshop/images/banner_2.jpg.webp");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+padding: 15px 35px;   
+font-size: 30px;      
+font-weight: bold;      
+            }
+        }
+        .men{
+            background-image: url("https://preview.colorlib.com/theme/coloshop/images/banner_3.jpg.webp");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+padding: 15px 35px;   
+font-size: 30px;      
+font-weight: bold;      
+            }
+        }
+    }
+}

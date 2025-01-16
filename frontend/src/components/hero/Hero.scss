@@ -1,0 +1,30 @@
+.hero{
+    background-image: url("https://preview.colorlib.com/theme/coloshop/images/slider_1.jpg.webp");
+    height: 700px;
+    .container{
+        height: 100%;
+
+        .hero-text{
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            div h1{
+                font-size: 70px;
+            }
+            button{
+                width: 150px;
+                background-color: red;
+                border: none;
+                border-radius: 8px;
+                height: 40px;
+                color: white;
+                &:hover{
+                    background-color: rgb(224, 80, 80);
+                }
+            }
+        }
+    }
+}
